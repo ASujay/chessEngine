@@ -50,4 +50,13 @@ enum{
 
 void print_bitboard(U64 board);
 
+
+/* Importmant bit masks */
+
+extern const U64 not_a_file;
+extern const U64 not_ab_file;
+extern const U64 not_h_file;
+extern const U64 not_gh_file;
+extern const U64 not_1st_rank;
+extern const U64 not_8th_rank;
 #endif
