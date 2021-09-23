@@ -7,9 +7,11 @@
 /* Pawns attack table */
 
 /* pawn_attacks[side][sqaure] */
-extern U64 pawn_attacks[2][64];
+extern U64 pawn_attacks[][64];
 
 /* generate pawn attacks */
 U64 mask_pawn_attacks(int sqaure, int side);
+void init_pawn_attacks(void);
+void print_pawn_attack_table(int side);
 
 #endif // PAWNS_H_

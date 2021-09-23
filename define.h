@@ -19,7 +19,7 @@ enum {
 /* Pieces */
 
 enum{
-    white, black
+    WHITE = 0, BLACK=1
 };
 
 // library header file

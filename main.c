@@ -1,12 +1,14 @@
 #include "define.h"
+#include "pawns.h"
 #include <stdint.h>
 
 int main(void){
  
-    U64 test = 0ULL;
+    init_pawn_attacks();
 
-    SET_SQUARE(test, A1);
-    print_bitboard(test);
+    for(int i = 0; i < 64; i++){
+        print_bitboard(pawn_attacks[WHITE][i]);
+    }
 
 
 

@@ -10,4 +10,6 @@ void print_bitboard(U64 board){
         printf("\n");
     }
     printf("\n    A B C D E F G H\n\n");
+
+    printf("Bitboard: %llu\n\n", board);
 }
