@@ -1,5 +1,5 @@
-#ifndef define_h_
-#define define_h_
+#ifndef DEFINE_H_
+#define DEFINE_H_
 
 /* This header file will define the helper macros and data types for the engine */
 
@@ -14,6 +14,12 @@ enum {
   A3, B3, C3, D3, E3, F3, G3, H3,
   A2, B2, C2, D2, E2, F2, G2, H2,
   A1, B1, C1, D1, E1, F1, G1, H1
+};
+
+/* Pieces */
+
+enum{
+    white, black
 };
 
 // library header file
@@ -42,16 +48,6 @@ enum {
     printf("\n");                           \
 
 
-void print_bitboard(U64 board){
-    for(int rank = 1; rank <= 8; rank++){
-        printf("%d   ", 8 - rank + 1);
-        for(int file = 1; file <= 8; file++){
-            int bit = file + (rank - 1)*8 - 1;
-            printf("%c ", PRINT_BIT(board, bit));
-        }
-        printf("\n");
-    }
-    printf("\n    A B C D E F G H\n\n");
-}
+void print_bitboard(U64 board);
 
 #endif
